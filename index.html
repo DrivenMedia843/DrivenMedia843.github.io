@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Driven Media</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body { margin:0; font-family:sans-serif; background:#000; color:#fff; }
+    header { text-align:center; padding:80px 20px; }
+    header img { max-width:160px; }
+    header h1 { margin-top:20px; font-size:1.8em; letter-spacing:2px; }
+    nav { display:flex; justify-content:center; gap:24px; padding:16px; background:rgba(255,255,255,0.05); }
+    nav a { color:#fff; text-decoration:none; font-weight:600; }
+    section { padding:60px 24px; max-width:960px; margin:auto; }
+    .services, .portfolio { display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+    .card { background:rgba(255,255,255,0.08); padding:20px; border-radius:6px; }
+    footer { text-align:center; padding:32px 20px; background:rgba(255,255,255,0.05); font-size:0.9em; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Driven Media">
+    <h1>SHARP VISUALS. DRIVEN RESULTS.</h1>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We’re a digital content agency crafting bold visual storytelling to engage audiences and deliver results.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card"><h3>🎥 Video Production</h3><p>From storyboards to edits, we create cinematic content.</p></div>
+      <div class="card"><h3>📱 Social Strategy</h3><p>Growth‑driven planning tailored to your brand’s voice.</p></div>
+      <div class="card"><h3>✍️ Content Writing</h3><p>Compelling copy for web, blog, and campaigns.</p></div>
+      <div class="card"><h3>🧠 Branding</h3><p>Creative direction that resonates and reinforces identity.</p></div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="card"><p>Project 1 – Coming Soon</p></div>
+      <div class="card"><p>Project 2 – Coming Soon</p></div>
+      <div class="card"><p>Project 3 – Coming Soon</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Email: <a href="mailto:contact@drivenmedia.com">contact@drivenmedia.com</a></p>
+    <p>Connect with us on social media.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Driven Media — All rights reserved.</p>
+  </footer>
+</body>
+</html>
