@@ -10,12 +10,18 @@
     header { text-align:center; padding:80px 20px; }
     header img { max-width:160px; }
     header h1 { margin-top:20px; font-size:1.8em; letter-spacing:2px; }
-    nav { display:flex; justify-content:center; gap:24px; padding:16px; background:rgba(255,255,255,0.05); }
+    nav { display:flex; justify-content:center; gap:24px; padding:16px; background:rgba(255,255,255,0.05); flex-wrap:wrap; }
     nav a { color:#fff; text-decoration:none; font-weight:600; }
     section { padding:60px 24px; max-width:960px; margin:auto; }
     .services, .portfolio { display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
     .card { background:rgba(255,255,255,0.08); padding:20px; border-radius:6px; }
     footer { text-align:center; padding:32px 20px; background:rgba(255,255,255,0.05); font-size:0.9em; }
+    input, textarea { width:100%; padding:10px; margin-bottom:10px; background:#111; border:1px solid #444; color:#fff; }
+    button { padding:10px 20px; background:#0077cc; color:white; border:none; cursor:pointer; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.2em; }
+      section { padding: 40px 16px; }
+    }
   </style>
 </head>
 <body>
@@ -32,7 +38,7 @@
 
   <section id="about">
     <h2>About Us</h2>
-    <p>We’re a digital content agency crafting bold visual storytelling to engage audiences and deliver results.</p>
+    <p>Driven Media is a digital content agency crafting bold visual storytelling to engage audiences and deliver results. Based in the U.S., we help brands grow through creativity and strategy.</p>
   </section>
 
   <section id="services">
@@ -48,7 +54,11 @@
   <section id="portfolio">
     <h2>Portfolio</h2>
     <div class="portfolio">
-      <div class="card"><p>Project 1 – Coming Soon</p></div>
+      <div class="card">
+        <h3>🎬 Launch Video for Client X</h3>
+        <p>We shot, edited, and delivered a cinematic 30-second ad that drove 20k+ views in the first week.</p>
+        <a href="https://youtube.com/watch?v=xyz" target="_blank" style="color:#00aaff;">Watch Video</a>
+      </div>
       <div class="card"><p>Project 2 – Coming Soon</p></div>
       <div class="card"><p>Project 3 – Coming Soon</p></div>
     </div>
@@ -56,8 +66,19 @@
 
   <section id="contact">
     <h2>Get in Touch</h2>
-    <p>Email: <a href="mailto:contact@drivenmedia.com">contact@drivenmedia.com</a></p>
-    <p>Connect with us on social media.</p>
+    <p>Email: <a href="mailto:contact@drivenmedia843.com">contact@drivenmedia843.com</a></p>
+    <div style="margin-top:20px;">
+      <a href="https://instagram.com/drivenmedia843" target="_blank" style="margin:0 10px;">📸 Instagram</a>
+      <a href="https://youtube.com/@drivenmedia843" target="_blank" style="margin:0 10px;">▶️ YouTube</a>
+      <a href="https://tiktok.com/@drivenmedia843" target="_blank" style="margin:0 10px;">🎵 TikTok</a>
+    </div>
+
+    <form action="https://formspree.io/f/yourformid" method="POST" style="margin-top:30px; max-width:500px; margin-inline:auto;">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
